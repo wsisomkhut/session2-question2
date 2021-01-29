@@ -1,0 +1,11 @@
+<div class="box-question1">
+    <div class="box-input">
+        <input (value)="number" type="text" value="" (keyup)="changeNumber($event)" />
+    </div>
+    <div class="box-dropdown">
+        <select (value)="cal"  (change)="onOptionsSelected($event)" >
+            <option *ngFor="let cal of typeCal">{{cal}}</option>
+        </select>
+    </div>
+    <div class="box-result">{{response}}</div>
+</div>
